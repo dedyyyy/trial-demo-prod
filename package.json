@@ -1,0 +1,26 @@
+{
+  "name": "trial-demo-prod",
+  "version": "1.0.0",
+  "description": "nodejs application for xendit trial demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dedyyyy/trial-demo-prod.git"
+  },
+  "author": "dedy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dedyyyy/trial-demo-prod/issues"
+  },
+  "homepage": "https://github.com/dedyyyy/trial-demo-prod#readme",
+  "dependencies": {
+    "custom-env": "^2.0.1",
+    "express": "^4.17.1",
+    "express-status-monitor": "^1.2.9",
+    "mongoose-morgan": "^1.0.12",
+    "pug": "^2.0.4"
+  }
+}
