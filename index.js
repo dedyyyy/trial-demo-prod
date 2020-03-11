@@ -30,9 +30,18 @@ console.log(title);
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
 app.use(expressStatusMonitor())
-
-
 app.use(express.static(path.join(__dirname, "public")));
+
+// Logger
+app.use(mongooseMorgan({
+    collection: 'access_logger',
+    connectionString: mongodbString,
+   },
+   {
+   
+   },
+   'combined'
+  ));
 
 /**
  * Routes Definitions
