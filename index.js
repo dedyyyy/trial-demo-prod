@@ -17,6 +17,9 @@ var osdata = {
     platform: os.platform(),
     release: os.release(),
 };
+var title = process.env.APP_TITLE;
+console.log(title);
+
 
 /**
  *  App Configuration
@@ -31,7 +34,7 @@ app.use(express.static(path.join(__dirname, "public")));
 /**
  * Routes Definitions
  */
-app.get("/", (res) => {
+app.get("/", (req,res) => {
     res.render("index", {
         title: title,
         osPlatform: osdata.platform,
