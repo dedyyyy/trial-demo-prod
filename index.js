@@ -18,6 +18,9 @@ var osdata = {
     release: os.release(),
 };
 var title = process.env.APP_TITLE;
+var candidateName = process.env.APP_CANDIDATE_NAME;
+var startDate = process.env.APP_CURRENT_DATE;
+var endDate = process.env.APP_TRIAL_START_DATE;
 console.log(title);
 
 
@@ -39,6 +42,9 @@ app.get("/", (req,res) => {
         title: title,
         osPlatform: osdata.platform,
         osRelease: osdata.release,
+        candidateName: candidateName,
+        trialStartDate: startDate,
+        currentDate: endDate,
     });
 });
 
