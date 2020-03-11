@@ -31,7 +31,7 @@ app.use(express.static(path.join(__dirname, "public")));
 /**
  * Routes Definitions
  */
-app.get("/", () => {
+app.get("/", (res) => {
     res.render("index", {
         title: title,
         osPlatform: osdata.platform,
