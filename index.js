@@ -11,7 +11,7 @@ var path = require("path");
 /**
  * App Variables
  */
-var app = express;
+var app = express();
 var port = process.env.PORT || "3000";
 var osdata = {
     platform: os.platform(),
