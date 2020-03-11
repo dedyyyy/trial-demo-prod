@@ -21,6 +21,8 @@ var title = process.env.APP_TITLE;
 var candidateName = process.env.APP_CANDIDATE_NAME;
 var startDate = process.env.APP_CURRENT_DATE;
 var endDate = process.env.APP_TRIAL_START_DATE;
+var mongodbString = process.env.APP_CONNECTIONSTRING;
+
 console.log(title);
 
 
